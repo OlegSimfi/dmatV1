@@ -1,0 +1,17 @@
+version: '3.3'
+
+services:
+  web:
+    depends_on:
+      - db
+    image: skinholdings/drakemall:dev
+    build: .
+    ports:
+      - 80:8000
+    environment:
+      - MONGODB_URI=mongodb://db:27017/drakemall
+      - PAYMENT_PROVIDER=allied_wallet
+  db:
+    image: mongo:latest
+    ports:
+      - 27016:27017
