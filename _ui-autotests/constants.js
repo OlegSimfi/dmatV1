@@ -2,8 +2,8 @@ const passwordForRegistration = '!QAZ2wsx';
 const usernameForRegistration = 'QaTester';
 const facebookEmail = '+380956604257';
 const facebookPassword = '!QAZ2wsx';
-const usernameExistingUser = 'DrakemallQA';
-const existingUserEmail = 'drakemallqa@gmail.com';
+const usernameExistingUser = 'QA';
+const existingUserEmail = 'qatest@gmail.com';
 const existingUserPassword = 'testingqa';
 const termsAndConditionsExample = "Back to delivery\n" +
     "Use of Service conditions\n" +

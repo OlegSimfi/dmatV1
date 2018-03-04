@@ -57,41 +57,41 @@ describe("Register with Email", function () {
     });
  });
 
-// describe("Login with Facebook", function () {
-//     it("Open Login window", function () {
-//         browser.click('//button[.="Log In"]');
-//         browser.pause(1000);
-//         const loginWindowTitle = browser.getText('//span[@class="form-title"]');
-//         loginWindowTitle.should.equal('Login');
-//     });
-//     it("Login to Facebook", function () {
-//         browser.click('//a[@class="social-login-btn large facebook-login"]');
-//         browser.setValue('#email',facebookEmail);
-//         browser.setValue('#pass',facebookPassword);
-//         browser.click('//button[@name="login"]');
-//         browser.pause(3000);
-//     });
-//     it("Check login with Facebook", function () {
-//         const userLogin = browser.getText('//span[@class="profile-name"]');
-//         userLogin.should.equal('Andrii');
-//         const balanceTitle = browser.getText('//div[@class="header-balance-title"]');
-//         balanceTitle.should.equal('Your balance');
-//         const balanceValue = browser.getText('//div[@class="header-balance-value"]');
-//         balanceValue.should.equal('$0.00');
-//         const addFundButton = browser.isExisting('//a[@class="action-btn header-glow-btn funds-btn"]');
-//         addFundButton.should.equal(true);
-//     });
-//     it("Logout", function () {
-//         browser.click('//button[@class="logout-btn"]');
-//         browser.pause(1000);
-//     });
-//     it("Check Logout", function () {
-//         const logInButton = browser.isExisting('//button[.="Log In"]');
-//         logInButton.should.equal(true);
-//         const signUpButton = browser.isExisting('//button[.="Sign Up"]');
-//         signUpButton.should.equal(true);
-//     });
-// });
+describe("Login with Facebook", function () {
+    it("Open Login window", function () {
+        browser.click('//button[.="Log In"]');
+        browser.pause(1000);
+        const loginWindowTitle = browser.getText('//span[@class="form-title"]');
+        loginWindowTitle.should.equal('Login');
+    });
+    it("Login to Facebook", function () {
+        browser.click('//a[@class="social-login-btn large facebook-login"]');
+        browser.setValue('#email',facebookEmail);
+        browser.setValue('#pass',facebookPassword);
+        browser.click('//button[@name="login"]');
+        browser.pause(3000);
+    });
+    it("Check login with Facebook", function () {
+        const userLogin = browser.getText('//span[@class="profile-name"]');
+        userLogin.should.equal('Andrii');
+        const balanceTitle = browser.getText('//div[@class="header-balance-title"]');
+        balanceTitle.should.equal('Your balance');
+        const balanceValue = browser.getText('//div[@class="header-balance-value"]');
+        balanceValue.should.equal('$0.00');
+        const addFundButton = browser.isExisting('//a[@class="action-btn header-glow-btn funds-btn"]');
+        addFundButton.should.equal(true);
+    });
+    it("Logout", function () {
+        browser.click('//button[@class="logout-btn"]');
+        browser.pause(1000);
+    });
+    it("Check Logout", function () {
+        const logInButton = browser.isExisting('//button[.="Log In"]');
+        logInButton.should.equal(true);
+        const signUpButton = browser.isExisting('//button[.="Sign Up"]');
+        signUpButton.should.equal(true);
+    });
+});
 
     describe("Login with Email of existing user", function () {
         it("Open Login window", function () {
